@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 /**
  * Hello world
@@ -15,7 +16,10 @@ public class App
 {
     public static void main( String[] args ) throws InterruptedException
     {
-        WebDriver driver=new ChromeDriver();
+    	
+    	ChromeOptions options = new ChromeOptions();
+    	options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+    	WebDriver driver = new ChromeDriver(options);
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         
         driver.get("https://www.naukri.com/");
