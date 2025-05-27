@@ -58,8 +58,10 @@ public class App
        
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div/textarea[@class='resumeHeadlineTxt materialize-textarea']")).clear();
-        driver.findElement(By.xpath("//div/textarea[@class='resumeHeadlineTxt materialize-textarea']")).sendKeys("Highly skilled Quality Assurance Engineer with 3+ years of experience in manual and automation testing. Proficient in Selenium, Cucumber, TestNG, SQL, and CI/CD with expertise in hybrid frameworks. Experienced in using Bitbucket for version control.");
-        System.out.println("Updated");
+
+        
+        driver.findElement(By.xpath("//div/textarea[@class='resumeHeadlineTxt materialize-textarea']")).sendKeys("Highly skilled Quality Assurance Engineer with 2+ years of experience in manual and automation testing. Proficient in Selenium, Cucumber, TestNG, SQL, and CI/CD with expertise in hybrid frameworks. Experienced in using Bitbucket for version control.");
+        System.out.println("Updated ");
         Thread.sleep(2000);
         driver.findElement(By.xpath("(//div/button[@class='btn-dark-ot'])[3]")).click();
         Thread.sleep(5000);
