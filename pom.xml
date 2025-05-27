@@ -87,7 +87,6 @@
         <mainClass>org.sample.mavensample.App</mainClass>
       </configuration>
     </plugin>
-    
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.4.0</version>
